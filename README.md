@@ -14,7 +14,7 @@ conda create --name <env_name> --file requirements.txt
 There are two key data components in our task: 
 - An external knowledge source from which we retrieve documents, here we use [Pubmed data](https://pubmed.ncbi.nlm.nih.gov/) and [IPCC reports data](https://www.ipcc.ch/).
 - Paired claim–explanation data, to serve as the input (claim) and output (explanation). We use [Climate Fever](https://github.com/tdiggelm/climate-fever-dataset).
-- After retrieval process via [Binary Passage Retriever](https://github.com/studio-ousia/bpr), the final data is used directly for model training and evaluation. Please feel free to download data from here().
+- After retrieval process via [Binary Passage Retriever](https://github.com/studio-ousia/bpr), the final data is used directly for model training and evaluation. Please feel free to download data from [here](https://drive.google.com/drive/folders/13sVDlyuERPKeSAIhUmNNN7ajQ_q6SqRg?usp=sharing).
 
 ### Data format
 Each instance in JSON file contains the following columns:
@@ -44,6 +44,9 @@ Each instance in JSON file contains the following columns:
 ```
 
 ## Citation
+If you find this work useful, please cite the following paper:
+[Automatic Explanation Generation For Climate Science Claims](https://aclanthology.org/2022.alta-1.16/)
+
 ```bibtex
 @inproceedings{xing-etal-2022-automatic,
     title = "Automatic Explanation Generation For Climate Science Claims",
